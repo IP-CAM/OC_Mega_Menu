@@ -601,7 +601,7 @@ var ocmegamenu = {
         var cols = parseInt(element.closest('.widget-block').find('.widget-cols').val());
 
         if(cols < 12) {
-            cols += 2;
+            cols += 1;
             element.closest('.widget-block').find('.widget-cols').val(cols);
             element.closest('.widget-block').removeClass().addClass('widget-block').addClass('w-transition').addClass('col-sm-' + cols);
         }
@@ -613,7 +613,7 @@ var ocmegamenu = {
         var cols = element.closest('.widget-block').find('.widget-cols').val();
 
         if(cols > 2) {
-            cols -= 2;
+            cols -= 1;
             element.closest('.widget-block').find('.widget-cols').val(cols);
             element.closest('.widget-block').removeClass().addClass('widget-block').addClass('w-transition').addClass('col-sm-' + cols);
         }
